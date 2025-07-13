@@ -1,4 +1,4 @@
-let nickname = '私のニックネームはこっふぃです。';
+let nickname = '私の名前は河野裕樹です。';
 let age = nickname + '年齢は24歳です。';
 console.log(age);
 
@@ -6,8 +6,9 @@ let languages1 = 'JavaScript';
 let languages2 = 'PHP';
 let languages3 = 'Ruby';
 let languages4 = 'Python';
-let text = `私の好きな言語は${languages1}です。次は${languages4}を勉強してみたいです。`
-console.log(text)
+let templateText = `私の好きな言語は${languages1}です。
+次は${languages4}を勉強してみたいです。`;
+console.log(templateText);
 
 let user = {
   name: 'John',
@@ -49,30 +50,34 @@ const sayWorld = function() {
 sayWorld();
 
 user.birthday = '2000-09-27';
-user.sayHello = 'Hello!';
-console.log(user.sayHello);
+user.sayHello = function(){
+  console.log('Hello!');
+};
+  
+user.sayHello();
+
 
 function add(x,y){
  let calc = x + y;
- console.log('和は'+calc+'です');
+ console.log(calc);
 }
 add(3,4);
 
 function subtract(x,y){
  let calc = x - y;
- console.log('差は'+calc+'です');
+ console.log(calc);
 }
 subtract(13,3);
 
 function multiply(x,y){
  let calc = x * y;
- console.log('積は'+calc+'です');
+ console.log(calc);
 }
 multiply(7,7);
 
 function divide(x,y){
  let calc = x / y;
- console.log('商は'+calc+'です');
+ console.log(calc);
 }
 divide(35,7);
 
@@ -99,12 +104,12 @@ function callback(){
 }
 setTimeout(callback,3000);
 
-let num = '0';
+let num = 0;
 if(num > 0){
   console.log('num is greater than 0');
 }else if(num < 0){
   console('num is less than 0');
-}else if(num == 0){
+}else if(num === 0){
   console.log('num is 0');
 }
 
