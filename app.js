@@ -1,6 +1,6 @@
-let nickname = '私の名前は河野裕樹です。';
-let age = nickname + '年齢は24歳です。';
-console.log(age);
+let nickname = '河野裕樹';
+let age = '24';
+console.log('私の名前は'+nickname+'です。年齢は'+age+'歳です。');
 
 let languages1 = 'JavaScript';
 let languages2 = 'PHP';
